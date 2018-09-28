@@ -35,7 +35,6 @@ public class Robot {
     //endregion
 
 
-
     public void rotateLeft(){
         if (this.direction == Direction.SOUTH) {
             this.direction = Direction.EAST;
@@ -65,9 +64,9 @@ public class Robot {
         }else if (this.direction == Direction.EAST){
             this.x++;
         }else if (this.direction == Direction.NORTH){
-            this.x--;
-        }else if (this.direction == Direction.WEST){
             this.y--;
+        }else {
+            this.x--;
         }
 
     }
